@@ -20,3 +20,7 @@ $router->get('/api', function () use ($router) {
 $router->get('/api/welcome', function () use ($router) {
     return response()->json(['name' => 'Jeiji']);
 });
+
+$router->get('/api/info', function () use ($router) {
+    return phpinfo();
+});
